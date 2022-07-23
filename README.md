@@ -1,5 +1,4 @@
 # lite-60
-lite 60
 
 Hi Doug,
 Brooke found https://timeqube.com/ and asked if we could help make a stress-free timer for 60 minute counseling session
