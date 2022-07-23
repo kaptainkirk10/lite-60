@@ -3,10 +3,14 @@
 Hi Doug,
 Brooke found https://timeqube.com/ and asked if we could help make a stress-free timer for 60 minute counseling session
 
-I have a microcontroller https://wiki.seeedstudio.com/XIAO-RP2040/ configured and running code 
+I have a microcontroller https://wiki.seeedstudio.com/XIAO-RP2040/ configured and running code
+
 using the complier Thonny https://thonny.org/
+
 and editing the code in Notepad ++ with the language set to Python
+
 The micronctoller will be housed in a 6 in night light https://smile.amazon.com/gp/product/B07VLSCFY8/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1
+
 The revision Wishlist
 
 rev.1
