@@ -11,14 +11,11 @@ The revision Wishlist
 
 rev.1
 	
-	change the Python shell code from a "cycle timer" displaying different LED values (colors) for a set duration to an event-based timer
+change the Python shell code from a "cycle timer" displaying different LED values (colors) for a set duration to an event-based timer
 		
-		the 4 events are:
+the 4 events are:
 			
-			-"majority of time remaining" (green LED value)
-			
-			-half or less than half of time remaining" (yellow LED value)
-			
-			-"closing thoughts and topics for next session" (solid red LED value)
-			
-			-"session is over" (flashing red LED value)
+-"majority of time remaining" (green LED value)			
+-half or less than half of time remaining" (yellow LED value)			
+-"closing thoughts and topics for next session" (solid red LED value)
+-"session is over" (flashing red LED value)
