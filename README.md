@@ -15,7 +15,10 @@ change the Python shell code from a "cycle timer" displaying different LED value
 		
 the 4 events are:
 			
--"majority of time remaining" (green LED value)			
--half or less than half of time remaining" (yellow LED value)			
--"closing thoughts and topics for next session" (solid red LED value)
--"session is over" (flashing red LED value)
+"majority of time remaining" (green LED value)			
+
+half or less than half of time remaining" (yellow LED value)			
+
+"closing thoughts and topics for next session" (solid red LED value)
+
+"session is over" (flashing red LED value)
