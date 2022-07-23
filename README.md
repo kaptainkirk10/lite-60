@@ -1,7 +1,7 @@
 # lite-60
 
-Hi Doug,
-Brooke found https://timeqube.com/ and asked if we could help make a stress-free timer for 60 minute counseling session
+Hi D,
+B found https://timeqube.com/ and asked if we could help make a stress-free timer for 60 minute counseling session
 
 I have a microcontroller https://wiki.seeedstudio.com/XIAO-RP2040/ configured and running code
 
