@@ -21,7 +21,7 @@ the 4 events are:
 			
 "majority of time remaining" (green LED value)			
 
-half or less than half of time remaining" (yellow LED value)			
+"half or less than half of time remaining" (yellow LED value)			
 
 "closing thoughts and topics for next session" (solid red LED value)
 
