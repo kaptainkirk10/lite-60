@@ -4,12 +4,8 @@ OFF = (0, 0, 0)
 
 class WS2812():        
     def __init__(self, pin_num, led_count, brightness = 0.5):
-        # self.Pin = Pin
         self.led_count = led_count
         self.brightness = brightness
-        # self.sm = rp2.StateMachine(0, ws2812, freq=8_000_000, sideset_base=Pin(pin_num))
-        # self.sm.active(1)
-        # self.ar = array.array("I", [0 for _ in range(led_count)])
 
     def pixels_show(self):
         print("pixels_show")
