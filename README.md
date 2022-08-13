@@ -11,18 +11,21 @@ and editing the code in Notepad ++ with the language set to Python
 
 The micronctoller will be housed in a 6 in night light https://smile.amazon.com/gp/product/B07VLSCFY8/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1
 
-The revision Wishlist
+## The revision Wishlist
 
 rev.1
-	
+
 change the Python shell code from a "cycle timer" displaying different LED values (colors) for a set duration to an event-based timer
-		
+
 the 4 events are:
-			
-"majority of time remaining" (green LED value)			
+1. "majority of time remaining" (green LED value)
+1. "half or less than half of time remaining" (yellow LED value)
+1. "closing thoughts and topics for next session" (solid red LED value)
+1. "session is over" (flashing red LED value)
 
-"half or less than half of time remaining" (yellow LED value)			
+## Usage
 
-"closing thoughts and topics for next session" (solid red LED value)
-
-"session is over" (flashing red LED value)
+Fake version that doesn't actually try to use the LEDs:
+```shell
+python3 main_fake.py
+```
