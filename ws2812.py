@@ -82,7 +82,12 @@ class WS2812():
         self.pixels_show()
         time.sleep(wait)
 
-    def color_flash(self, color, wait):
-        self.pixels_fill(color)
-        self.pixels_show()
-        time.sleep(wait)
+    def color_flash(self, color, wait, blink_interval=1):
+        iterations = round(wait / blink_interval)
+        for i in range(iterations):
+            if i % 2 == 0:
+                self.pixels_fill(color)
+            else:
+                self.pixels_fill(OFF)
+            self.pixels_show()
+            time.sleep(blink_interval)
