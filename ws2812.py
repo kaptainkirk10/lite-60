@@ -2,6 +2,10 @@ import array, time
 from machine import Pin
 import rp2
 
+
+OFF = (0, 0, 0)
+
+
 # Configure the number of WS2812 LEDs.
 #brightness = 0.2
 @rp2.asm_pio(sideset_init=rp2.PIO.OUT_LOW, out_shiftdir=rp2.PIO.SHIFT_LEFT, autopull=True,pull_thresh=24)
@@ -17,6 +21,8 @@ def ws2812():
     label("do_zero")
     nop() .side(0) [T2 - 1]
     wrap()
+
+
 class WS2812():        
     def __init__(self, pin_num, led_count, brightness = 0.5):
         self.Pin = Pin
@@ -49,6 +55,7 @@ class WS2812():
             time.sleep(wait)
             self.pixels_show()
         time.sleep(0.2)
+
     def wheel(self, pos):
     # Input a value 0 to 255 to get a color value.
     # The colours are a transition r - g - b - back to r.
@@ -62,7 +69,6 @@ class WS2812():
         pos -= 170
         return (pos * 3, 0, 255 - pos * 3)
 
-
     def rainbow_cycle(self, wait):
         for j in range(255):
             for i in range(self.led_count):
@@ -71,3 +77,12 @@ class WS2812():
             self.pixels_show()
             time.sleep(wait)
 
+    def color_solid(self, color, wait):
+        self.pixels_fill(color)
+        self.pixels_show()
+        time.sleep(wait)
+
+    def color_flash(self, color, wait):
+        self.pixels_fill(color)
+        self.pixels_show()
+        time.sleep(wait)
